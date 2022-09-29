@@ -1,0 +1,6 @@
+docker container create --name mysql -p 3307:3307 -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password mysql:latest
+
+docker exec -it mysql bash
+
+mysql -uroot -p
+password
